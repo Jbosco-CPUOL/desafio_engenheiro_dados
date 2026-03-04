@@ -12,9 +12,9 @@ spark = SparkSession.builder \
 
 def extrair_dados(spark):
 
-    df_associado = spark.read.csv('db_pessoa.associado.csv', sep=';', header=True, inferSchema=True, encoding="ISO-8859-1")
-    df_agencia = spark.read.csv('db_entidade.agencia.csv', sep=';', header=True, inferSchema=True, encoding="ISO-8859-1")
-    df_transacoes = spark.read.csv('db_cartoes.transacoes.csv', sep=';', header=True, inferSchema=True, encoding="ISO-8859-1")
+    df_associado = spark.read.csv('data/db_pessoa.associado.csv', sep=';', header=True, inferSchema=True, encoding="ISO-8859-1")
+    df_agencia = spark.read.csv('data/db_entidade.agencia.csv', sep=';', header=True, inferSchema=True, encoding="ISO-8859-1")
+    df_transacoes = spark.read.csv('data/db_cartoes.transacoes.csv', sep=';', header=True, inferSchema=True, encoding="ISO-8859-1")
     
     return df_associado, df_agencia, df_transacoes
 

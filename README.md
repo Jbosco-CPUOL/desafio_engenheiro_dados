@@ -54,17 +54,17 @@ Coloque os ficheiros .csv na mesma pasta dos scripts e execute-os por ordem:
 #### Etapa 1: Ingestão e Sanitização
 
 ```bash
-python desafio_1.py
+python3 scripts/desafio_1.py
 ```
 
 #### Etapa 2: Construção da Tabela Flat
 
 ```bash
-python desafio_2.py
+python3 scripts/desafio_2.py
 ```
 
 #### Etapa 3: Construção do Data Warehouse
 
 ```bash
-python desafio_3.py
+python3 scripts/desafio_3.py
 ```
